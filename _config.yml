@@ -35,17 +35,17 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "Java, Db，nosql，H5，bigdata，git，hexo"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: /atom.xml
 
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  #since: 2015
+  since: 2018
 
   # Icon between year and copyright info.
   icon: user
@@ -54,13 +54,13 @@ footer:
   copyright:
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
-  powered: true
+  powered: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
-    enable: true
+    enable: false
     # Version info of NexT after scheme info (vX.X.X).
-    version: true
+    version: false
   # -------------------------------------------------------------
   # Any custom text can be defined here.
   #custom_text: Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
@@ -79,7 +79,7 @@ seo: false
 
 # If true, will add site-subtitle to index page, added in main hexo config.
 # subtitle: Subtitle
-index_with_subtitle: false
+index_with_subtitle: true
 
 
 # ---------------------------------------------------------------
@@ -94,12 +94,13 @@ index_with_subtitle: false
 menu:
   home: / || home
   #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
+  tags: /tags/ || tags
+  categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
-  #sitemap: /sitemap.xml || sitemap
+  sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
+  about: /about/ || user
 
 # Enable/Disable menu icons.
 menu_icons:
@@ -111,10 +112,10 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -126,9 +127,9 @@ scheme: Muse
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
+social:
   #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+  E-Mail: mailto:zhuhaijun1988@qq.com || envelope
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -137,6 +138,9 @@ scheme: Muse
   #YouTube: https://youtube.com/yourname || youtube
   #Instagram: https://instagram.com/yourname || instagram
   #Skype: skype:yourname?call|chat || skype
+  weibo: https://weibo.com/zhuhaijun1988 || weibo
+  #QQ: 526041319 || qq
+  #WeChat: zhuhj083 || wechat
 
 social_icons:
   enable: true
@@ -148,13 +152,22 @@ links_icon: link
 links_title: Links
 links_layout: block
 #links_layout: inline
-#links:
+links:
   #Title: http://example.com/
+  myjscode: http://www.myjscode.com?fr=zhj/
+  Sogou Novel: https://yuedu.sogou.com/
+  Next docs: http://theme-next.iissnan.com/
+  Hexo docs: https://hexo.io/docs/
+  #Google Webmaster: https://www.google.com/webmasters/
+  #CNZZ: https://web.umeng.com
+  leancloud: https://leancloud.cn
+
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
 #avatar: /images/avatar.gif
+avatar: /images/avatar.png
 
 # Table Of Contents in the Sidebar
 toc:
@@ -194,10 +207,10 @@ sidebar:
   b2t: false
 
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
   # Enable sidebar on narrow view (only for Muse | Mist).
-  onmobile: false
+  onmobile: true
 
 
 # ---------------------------------------------------------------
@@ -216,40 +229,40 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
-  length: 150
+  enable: true
+  length: 200
 
 # Post meta display settings
 post_meta:
   item_text: true
   created_at: true
-  updated_at: false
+  updated_at: true
   categories: true
 
 # Post wordcount display settings
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
-  totalcount: false
+  wordcount: true
+  min2read: true
+  totalcount: true
   separated_meta: true
 
 # Wechat Subscriber
 #wechat_subscriber:
-  #enabled: true
+  #enabled: false
   #qcode: /path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg
   #description: ex. subscribe to my blog by scanning my public wechat account
 
 # Reward
-#reward_comment: Donate comment here
-#wechatpay: /images/wechatpay.jpg
-#alipay: /images/alipay.jpg
+reward_comment: 谢谢你的鼓励！
+wechatpay: /images/wechatpay.jpg
+alipay: /images/alipay.jpg
 #bitcoin: /images/bitcoin.png
 
 # Declare license on posts
 post_copyright:
-  enable: false
+  enable: true
   license: CC BY-NC-SA 3.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 
@@ -342,7 +355,7 @@ font:
 
 # MathJax Support
 mathjax:
-  enable: false
+  enable: true
   per_page: false
   cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
@@ -353,7 +366,7 @@ han: false
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: bfa04bfb8a85e4551db88727e3b32704
 
 # Duoshuo ShortName
 #duoshuo_shortname:
@@ -361,7 +374,7 @@ han: false
 # Disqus
 disqus:
   enable: false
-  shortname:
+  shortname: https-zhuhj083-github-io
   count: true
 
 # Hypercomments
@@ -401,16 +414,16 @@ valine:
 # Introduction: https://imsun.net/posts/gitment-introduction/
 # You can get your Github ID from https://api.github.com/users/<Github username>
 gitment:
-  enable: false
+  enable: true
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
   language: # Force language, or auto switch by theme
-  github_user: # MUST HAVE, Your Github ID
-  github_repo: # MUST HAVE, The repo you use to store Gitment comments
-  client_id: # MUST HAVE, Github client id for the Gitment
-  client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  github_user: zhuhj083 # MUST HAVE, Your Github ID
+  github_repo: BlogComments # MUST HAVE, The repo you use to store Gitment comments
+  client_id: b18a46ea15307cfa951e # MUST HAVE, Github client id for the Gitment
+  client_secret: 39f3726d5eaf0ede720d9539244fd7ed7c213171 # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
@@ -444,21 +457,21 @@ gitment:
 #           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
-  enable: false
+  enable: true
   postbottom:
-    enable: false
+    enable: true
     options:
-      iconStyle: box
+      iconStyle: default
       boxForm: horizontal
       position: bottomCenter
-      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
+      networks: Weibo,Wechat,Douban,QQZone,Evernote,Facebook
   float:
-    enable: false
+    enable: true
     options:
       iconStyle: box
       boxForm: horizontal
       position: middleRight
-      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
+      networks: Weibo,Wechat,Douban,QQZone,Evernote,Facebook
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -476,7 +489,7 @@ needmoreshare2:
 #yandex_site_verification:
 
 # CNZZ count
-#cnzz_siteid:
+cnzz_siteid: 1273578910
 
 # Application Insights
 # See https://azure.microsoft.com/en-us/services/application-insights/
@@ -520,6 +533,10 @@ vkontakte_api:
   comments:     true
   num_of_posts: 10
 
+# benwenjieshu
+passage_end_tag:
+  enabled: true
+
 # Star rating support to each article.
 # To get your ID visit https://widgetpack.com
 rating:
@@ -531,9 +548,9 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: a9vVypE1DjLuAnmn3NVfkxep-gzGzoHsz
+  app_key: Lfb9AURwxLsBSmLtQdaLamMj
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
@@ -604,7 +621,7 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
@@ -675,7 +692,7 @@ motion:
 fancybox: true
 
 # Progress bar in the top during page loading.
-pace: false
+pace: true
 # Themes list:
 #pace-theme-big-counter
 #pace-theme-bounce
@@ -695,7 +712,7 @@ pace: false
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: false
+canvas_nest: true
 
 # three_waves
 three_waves: false
@@ -811,3 +828,4 @@ images: images
 
 # Theme version
 version: 5.1.4
+
