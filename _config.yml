@@ -464,14 +464,14 @@ needmoreshare2:
       iconStyle: default
       boxForm: horizontal
       position: bottomCenter
-      networks: Weibo,Wechat,Douban,QQZone,Evernote,Facebook
+      networks: Weibo,Douban,QQZone,Evernote
   float:
     enable: true
     options:
       iconStyle: box
       boxForm: horizontal
       position: middleRight
-      networks: Weibo,Wechat,Douban,QQZone,Evernote,Facebook
+      networks: Weibo,Douban,QQZone,Evernote
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
