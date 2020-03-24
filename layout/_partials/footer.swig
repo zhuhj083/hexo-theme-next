@@ -33,6 +33,12 @@
   <span class="post-meta-divider">|</span>
 {% endif %}
 
+{% if theme.footer.beian.enable %}
+  <div class="theme-info">
+    <a class="theme-link" target="_blank" href="http://www.beian.miit.gov.cn/">{{theme.footer.beian.icp}}</a>
+  </div>
+{% endif %}
+
 {% if theme.footer.theme.enable %}
   <div class="theme-info">{#
   #}{{ __('footer.theme') }} &mdash; {#

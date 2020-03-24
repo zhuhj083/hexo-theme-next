@@ -61,6 +61,11 @@ footer:
     enable: false
     # Version info of NexT after scheme info (vX.X.X).
     version: false
+
+  beian:
+    enable: true
+    icp: 京ICP备20008757号
+
   # -------------------------------------------------------------
   # Any custom text can be defined here.
   #custom_text: Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
@@ -383,9 +388,9 @@ disqus:
 
 # changyan
 changyan:
-  enable: false
-  appid:
-  appkey:
+  enable: true
+  appid: cytASUmSU
+  appkey: 918ca10910958e34959b6be087d22c4d
 
 
 # Valine.
@@ -415,7 +420,7 @@ valine:
 # Introduction: https://imsun.net/posts/gitment-introduction/
 # You can get your Github ID from https://api.github.com/users/<Github username>
 gitment:
-  enable: true
+  enable: false
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
@@ -829,4 +834,3 @@ images: images
 
 # Theme version
 version: 5.1.4
-
